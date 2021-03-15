@@ -7,31 +7,31 @@
 import Foundation
 
 extension Bool: JSONEncodable {
-    func encodeToJSON() -> Any { return self as Any }
+   public func encodeToJSON() -> Any { return self as Any }
 }
 
 extension Float: JSONEncodable {
-    func encodeToJSON() -> Any { return self as Any }
+   public func encodeToJSON() -> Any { return self as Any }
 }
 
 extension Int: JSONEncodable {
-    func encodeToJSON() -> Any { return self as Any }
+   public func encodeToJSON() -> Any { return self as Any }
 }
 
 extension Int32: JSONEncodable {
-    func encodeToJSON() -> Any { return NSNumber(value: self as Int32) }
+   public func encodeToJSON() -> Any { return NSNumber(value: self as Int32) }
 }
 
 extension Int64: JSONEncodable {
-    func encodeToJSON() -> Any { return NSNumber(value: self as Int64) }
+   public func encodeToJSON() -> Any { return NSNumber(value: self as Int64) }
 }
 
 extension Double: JSONEncodable {
-    func encodeToJSON() -> Any { return self as Any }
+   public func encodeToJSON() -> Any { return self as Any }
 }
 
 extension String: JSONEncodable {
-    func encodeToJSON() -> Any { return self as Any }
+   public func encodeToJSON() -> Any { return self as Any }
 }
 
 extension RawRepresentable where RawValue: JSONEncodable {
